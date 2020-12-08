@@ -1226,7 +1226,7 @@ function takeSonosState(ip, sonosState) {
     const player   = discovery.getPlayerByUUID(channels[ip].uuid);
     const playMode = sonosState.playMode;
 
-    adapter.log.debug(`>  playbackState: ${sonosState.playbackState} - ${sonosState.currentTrack && sonosState.currentTrack.title ? sonosState.currentTrack.title : ''}`);
+    adapter.log.debug(`>>>  playbackState: ${sonosState.playbackState} - ${sonosState.currentTrack && sonosState.currentTrack.title ? sonosState.currentTrack.title : ''}`);
 
     let stableState = !ps.transitioning;
 
